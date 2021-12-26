@@ -1,0 +1,12 @@
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# CocoaPods
+Pods/
+
+# R.swift generated files
+*.generated.swift
