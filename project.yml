@@ -1,0 +1,45 @@
+name: Chess
+options:
+  xcodeVersion: 12.4
+configs:
+  Production: release
+  Develop: debug
+options:
+  deploymentTarget:
+    iOS: '13.0'
+  defaultConfig: Develop
+  bundleIdPrefix: ru
+  groupSortPosition: top
+  developmentLanguage: "ru"
+  usesTabs: false
+  indentWidth: 2
+  tabWidth: 2
+  groupOrdering:
+    - order: [Sources, Supporting Files]
+    - pattern: 'Chess'
+      order: [Application, Common, Protocols, Extensions, Modules, Views, Services, Utils]
+settings:
+  base:
+    SWIFT_VERSION: 5.5
+    TARGETED_DEVICE_FAMILY: 1
+  configs:
+    Production:
+      SWIFT_COMPILATION_MODE: "wholemodule"
+    Develop:
+      SWIFT_COMPILATION_MODE: "incremental"
+targets:
+  Chess:
+    type: application
+    platform: iOS
+    deploymentTarget: 13.0
+    sources:
+      - Chess
+    settings:
+      base:
+        CODE_SIGN_IDENTITY: iPhone Developer
+        CODE_SIGN_STYLE: Automatic
+        INFOPLIST_FILE: Supporting Files/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: ru.chess
+    scheme:
+      environmentVariables:
+        DYLD_PRINT_STATISTICS: 1
