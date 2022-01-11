@@ -16,6 +16,7 @@ target 'Chess' do
   pod 'NVActivityIndicatorView', '5.1.1'
   pod 'Hero', '1.6.1'
   pod 'LoadingShimmer', '1.0.3'
+  pod 'Firebase/Firestore'
 
 
 end
