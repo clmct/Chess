@@ -12,10 +12,11 @@
 		1B8CEC26C3BFBAE2C7E2E8A4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD19FEC42D9108EA48F338 /* MenuViewController.swift */; };
 		298B2EE47DAEF67095AEC3D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8E387E02EFB91DADE42EED /* LaunchScreen.storyboard */; };
 		5C2A6357BC7FCE06A3340E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AF98DE691A647C06818767 /* AppDelegate.swift */; };
+		6338209E606813B2BBCC57A6 /* Pods_Chess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E320F6443AAA66036B0B4C6 /* Pods_Chess.framework */; };
 		742DD170664C9E28BCE30877 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B112B5DF7B51E843BEDC1E /* BoardView.swift */; };
-		84654B0073FAF145C8D4379C /* Pods_Chess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F2FEDC412C52DACC9362CC /* Pods_Chess.framework */; };
 		8EB2D66A43557688F80F3385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1375BA3DF5A456DB978FEC7 /* Main.storyboard */; };
 		A080519567B62AF0B13B5E7F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610DE4E399FE8E63A4FCC0C /* GameViewController.swift */; };
+		A1383A4F2797669100677BD9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1383A4E2797669100677BD9 /* CustomButton.swift */; };
 		A80DAA5F91F5DD3F5A3219D2 /* PromotionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C66E166BB16439224638C /* PromotionSelectionViewController.swift */; };
 		AA238C50499704FA36F3E459 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9A7DFBA5AD31B8BCBC90CF /* BoardViewModel.swift */; };
 		BEDCC9767B57BA6919A3D091 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34F84007CD4F7A58409B8C /* GameViewModel.swift */; };
@@ -25,28 +26,29 @@
 /* Begin PBXFileReference section */
 		0885D6ADEF02551ACEDF61D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0FBD1594B75AE0B50864E384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		12CF9BD73B7C974D4D1AF271 /* Pods-Chess.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chess.production.xcconfig"; path = "Target Support Files/Pods-Chess/Pods-Chess.production.xcconfig"; sourceTree = "<group>"; };
 		2610DE4E399FE8E63A4FCC0C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		36B112B5DF7B51E843BEDC1E /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		47F48FF0362691C13ACEDE6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A50D03EA2009BD07FD10574 /* Chess.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B34F84007CD4F7A58409B8C /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		5F0C908E3AC907FDA31264CC /* Pods-Chess.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chess.production.xcconfig"; path = "Target Support Files/Pods-Chess/Pods-Chess.production.xcconfig"; sourceTree = "<group>"; };
 		5F9A7DFBA5AD31B8BCBC90CF /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
-		810304F09310E5BDC36C7316 /* Pods-Chess.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chess.develop.xcconfig"; path = "Target Support Files/Pods-Chess/Pods-Chess.develop.xcconfig"; sourceTree = "<group>"; };
-		92F2FEDC412C52DACC9362CC /* Pods_Chess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E320F6443AAA66036B0B4C6 /* Pods_Chess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1383A4E2797669100677BD9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A4AF98DE691A647C06818767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4D4CBF34113B51946050A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEFD19FEC42D9108EA48F338 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CD5C66E166BB16439224638C /* PromotionSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionSelectionViewController.swift; sourceTree = "<group>"; };
 		E3F2B7CBB51A6000F99DB99B /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
+		FC9C41F88D638A062312DE71 /* Pods-Chess.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chess.develop.xcconfig"; path = "Target Support Files/Pods-Chess/Pods-Chess.develop.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C62F29B6C252CA37F505F584 /* Frameworks */ = {
+		0489A88BE83B9ABF690225C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84654B0073FAF145C8D4379C /* Pods_Chess.framework in Frameworks */,
+				6338209E606813B2BBCC57A6 /* Pods_Chess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,24 +122,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		77CB77CD206824F942597B6E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				92F2FEDC412C52DACC9362CC /* Pods_Chess.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AB32BF239852094C723538D7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				810304F09310E5BDC36C7316 /* Pods-Chess.develop.xcconfig */,
-				12CF9BD73B7C974D4D1AF271 /* Pods-Chess.production.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		AE32617A6E0EDFE5F7DB23DA /* PromotionSelection */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,15 +133,33 @@
 		C930DD621AF60BAE986A9B02 = {
 			isa = PBXGroup;
 			children = (
+				A1383A4E2797669100677BD9 /* CustomButton.swift */,
 				5B40E94051B82CA4DCB95D2B /* Chess */,
 				719DE6F4EBA5FB53BA6C9821 /* Products */,
-				AB32BF239852094C723538D7 /* Pods */,
-				77CB77CD206824F942597B6E /* Frameworks */,
+				D5E76B48BC0ED5C82D34D29E /* Pods */,
+				D04C9836B5510EAA003604DC /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
 			tabWidth = 2;
 			usesTabs = 0;
+		};
+		D04C9836B5510EAA003604DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E320F6443AAA66036B0B4C6 /* Pods_Chess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5E76B48BC0ED5C82D34D29E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC9C41F88D638A062312DE71 /* Pods-Chess.develop.xcconfig */,
+				5F0C908E3AC907FDA31264CC /* Pods-Chess.production.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
 		};
 		FCEB7F79DAE7CF29059A9ADC /* Menu */ = {
 			isa = PBXGroup;
@@ -174,11 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C6663BE10B094539B135C89 /* Build configuration list for PBXNativeTarget "Chess" */;
 			buildPhases = (
-				6B46587547EC3925BD63C4AB /* [CP] Check Pods Manifest.lock */,
+				F656A71015309EC4E7231227 /* [CP] Check Pods Manifest.lock */,
 				1A7F58DA643D00A385059854 /* Sources */,
 				A7CC017CA2BB8869A99FE74D /* Resources */,
-				C62F29B6C252CA37F505F584 /* Frameworks */,
-				B8E9339FF49A4ACFEEA9CDC1 /* [CP] Embed Pods Frameworks */,
+				0489A88BE83B9ABF690225C2 /* Frameworks */,
+				23BD74A89AA96C1F9ED6BB6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +236,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6B46587547EC3925BD63C4AB /* [CP] Check Pods Manifest.lock */ = {
+		23BD74A89AA96C1F9ED6BB6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F656A71015309EC4E7231227 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,23 +275,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8E9339FF49A4ACFEEA9CDC1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -284,6 +286,7 @@
 				742DD170664C9E28BCE30877 /* BoardView.swift in Sources */,
 				AA238C50499704FA36F3E459 /* BoardViewModel.swift in Sources */,
 				A080519567B62AF0B13B5E7F /* GameViewController.swift in Sources */,
+				A1383A4F2797669100677BD9 /* CustomButton.swift in Sources */,
 				BEDCC9767B57BA6919A3D091 /* GameViewModel.swift in Sources */,
 				1B8CEC26C3BFBAE2C7E2E8A4 /* MenuViewController.swift in Sources */,
 				17BF56DF8E9211E63485300B /* PieceView.swift in Sources */,
@@ -316,7 +319,7 @@
 /* Begin XCBuildConfiguration section */
 		544D1780E69B480C3C906AC5 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12CF9BD73B7C974D4D1AF271 /* Pods-Chess.production.xcconfig */;
+			baseConfigurationReference = 5F0C908E3AC907FDA31264CC /* Pods-Chess.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -457,7 +460,7 @@
 		};
 		CDEFC7BF3F8D265A862F9657 /* Develop */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 810304F09310E5BDC36C7316 /* Pods-Chess.develop.xcconfig */;
+			baseConfigurationReference = FC9C41F88D638A062312DE71 /* Pods-Chess.develop.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
