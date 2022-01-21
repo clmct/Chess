@@ -225,6 +225,22 @@
                                     <action selector="AIvsAIButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kEg-tL-OpH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7R-iq-kBa">
+                                <rect key="frame" x="330" y="25" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="JAL-2u-rW4"/>
+                                    <constraint firstAttribute="height" constant="20" id="ZDN-qv-KFj"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="question-removebg-preview"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playVideoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYS-Bv-FBy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -233,11 +249,13 @@
                             <constraint firstItem="eZ8-VN-qjj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0oB-Xu-78j"/>
                             <constraint firstItem="iO0-G6-gxi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Xk-Ua-laM"/>
                             <constraint firstItem="1eq-su-UbI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UpM-iV-qyd"/>
+                            <constraint firstItem="g7R-iq-kBa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="YyG-uc-2kj"/>
                             <constraint firstItem="riG-8y-z5Y" firstAttribute="top" secondItem="1eq-su-UbI" secondAttribute="bottom" constant="55" id="bPU-IZ-Qw3"/>
                             <constraint firstItem="eZ8-VN-qjj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="95" id="fnO-be-hZ2"/>
                             <constraint firstItem="2wz-Zk-243" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nFU-UC-mr5"/>
                             <constraint firstItem="2wz-Zk-243" firstAttribute="top" secondItem="riG-8y-z5Y" secondAttribute="bottom" constant="55" id="rWC-SJ-RiU"/>
                             <constraint firstItem="riG-8y-z5Y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="t6S-Dr-fvU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g7R-iq-kBa" secondAttribute="trailing" constant="25" id="vda-rD-W9s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iO0-G6-gxi" secondAttribute="bottom" constant="10" id="vi3-TW-WN1"/>
                         </constraints>
                     </view>
@@ -250,6 +268,7 @@
                         <outlet property="RandomKing" destination="y5L-n7-nqw" id="yeU-bZ-BJF"/>
                         <outlet property="Russia" destination="DX4-6B-wcX" id="XmZ-lL-BvE"/>
                         <outlet property="WhiteKing" destination="UWG-Ln-fR1" id="r6y-2K-giA"/>
+                        <outlet property="question" destination="g7R-iq-kBa" id="4Qj-eX-G5N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -262,6 +281,7 @@
         <image name="ChesEmblem" width="1000" height="995"/>
         <image name="W&amp;A" width="110" height="115"/>
         <image name="WhiteKing" width="771" height="777"/>
+        <image name="question-removebg-preview" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

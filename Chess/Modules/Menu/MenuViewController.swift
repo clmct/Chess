@@ -5,7 +5,8 @@
 
 import UIKit
 import SwiftChess
-
+import AVFoundation
+import AVKit
 class MenuViewController: UIViewController {
   
 
@@ -13,6 +14,7 @@ class MenuViewController: UIViewController {
   @IBOutlet weak var Normal: UIButton!
   @IBOutlet weak var Russia: UIButton!
   
+  @IBOutlet weak var question: UIButton!
   @IBOutlet weak var AI: UIButton!
   @IBOutlet weak var H: UIButton!
   
@@ -168,6 +170,56 @@ class MenuViewController: UIViewController {
     }
     
   }
+
+  var audio:AVPlayer!
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    question.backgroundColor = .white
+    question.layer.cornerRadius = 8
+    question.layer.shadowRadius = 4
+      
+    question.layer.shadowOpacity = 0.3
+    question.layer.shadowOffset  = CGSize(width: 0, height: 2)
+    let url = Bundle.main.url(forResource: "audioBg", withExtension: "mp3")
+        // now use declared path 'url' to initialize the player
+    audio = AVPlayer.init(url: url!)
+        // after initialization play audio its just like click on play button
+    audio?.play()
+  }
+  
+  @IBAction func playVideoAction(_ sender: Any) {
+    let avp = AVPlayerViewController()
+    let urlFile = URL(fileURLWithPath: Bundle.main.path(forResource: "PlayChess", ofType: "mp4")!)
+    avp.player = AVPlayer(url: urlFile)
+    
+    present(avp, animated: true){ [self] in
+      self.audio?.pause()
+      avp.player?.play()
+      NotificationCenter.default.addObserver(self, selector: #selector(videoDidCancel), name: NSNotification.Name.kAVPlayerViewControllerDismissingNotification, object: nil)
+     
+    }
+    
+  }
   
   
+  @objc private func videoDidCancel() {
+    self.audio?.play()
+  }
+ 
+}
+extension Notification.Name {
+  static let kAVPlayerViewControllerDismissingNotification = Notification.Name.init("dismissing")
+}
+extension AVPlayerViewController {
+    // override 'viewWillDisappear'
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // now, check that this ViewController is dismissing
+        if self.isBeingDismissed == false {
+            return
+        }
+
+        // and then , post a simple notification and observe & handle it, where & when you need to.....
+        NotificationCenter.default.post(name: .kAVPlayerViewControllerDismissingNotification, object: nil)
+    }
 }
