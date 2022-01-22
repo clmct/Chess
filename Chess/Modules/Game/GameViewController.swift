@@ -49,12 +49,18 @@ class GameViewController: UIViewController {
     viewModel.delegate = self
     
     viewModel.addPieceViews()
-    
+//    viewModel.game.currentPlayer.game.
    
   }
   
+  
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+    if !self.hasMadeInitialAppearance {
+      if let player = viewModel.game.currentPlayer as? AIPlayer {
+        player.makeMoveAsync()
+      }
+    }
   }
   
   private func bindToViewModel() {
@@ -189,14 +195,24 @@ class GameViewController: UIViewController {
     present(alertController, animated: true, completion: nil)
   }
   
-
+  @objc func tellAIToTakeGo() {
+    if let player = viewModel.game.currentPlayer as? AIPlayer {
+      player.makeMoveAsync()
+    }
+  }
+  
 }
 
 // MARK: - GameViewModelDelegate
 
 extension GameViewController: GameViewModelDelegate {
   func gameDidChangeCurrentPlayer(game: Game) {
-    // Do nothing
+    self.selectedIndex = nil
+    
+    // Tell AI to take go
+    if game.currentPlayer is AIPlayer {
+      perform(#selector(tellAIToTakeGo), with: nil, afterDelay: 1)
+    }
   }
   
   
@@ -250,11 +266,11 @@ extension GameViewController: GameViewModelDelegate {
   func gameDidEndUpdates(game: Game) {
   }
   
-  func gameWonByPlayer(game: Game, player: Player) {
+  func wonByPlayer(_ player: Player) {
     let url = Bundle.main.url(forResource: "audioWin", withExtension: "mp3")
-        // now use declared path 'url' to initialize the player
+    // now use declared path 'url' to initialize the player
     audio = AVPlayer.init(url: url!)
-        // after initialization play audio its just like click on play button
+    // after initialization play audio its just like click on play button
     audio?.play()
     let colorName = player.color.string
     
@@ -285,6 +301,15 @@ extension GameViewController: GameViewModelDelegate {
     }
     
     showAlert(title: title, message: message)
+  }
+  
+  func gameWonByPlayer(game: Game, player: Player) {
+    wonByPlayer(player)
+    FirebaseService.shared.getScore { score in
+      if let score = score {
+        FirebaseService.shared.setScore(value: score)
+      }
+    }
   }
   
   func gameEndedInStaleMate(game: Game) {

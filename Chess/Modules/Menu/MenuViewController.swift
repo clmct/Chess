@@ -7,7 +7,12 @@ import UIKit
 import SwiftChess
 import AVFoundation
 import AVKit
+import Hero
+
 class MenuViewController: UIViewController {
+  
+  @IBOutlet weak var image1: UIImageView!
+  @IBOutlet weak var image2: UIImageView!
   
   @IBOutlet weak var score: UILabel!
   @IBOutlet weak var Easy: UIButton!
@@ -25,6 +30,7 @@ class MenuViewController: UIViewController {
   var colorToStart: String = "white"
   var vesusStart: String = "AI"
   var levelStart: String = "Normal"
+  var audio:AVPlayer!
   
   class func initWithSB() -> MenuViewController {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -36,6 +42,17 @@ class MenuViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    question.backgroundColor = .white
+    question.layer.cornerRadius = 8
+    question.layer.shadowRadius = 4
+      
+    question.layer.shadowOpacity = 0.3
+    question.layer.shadowOffset  = CGSize(width: 0, height: 2)
+    let url = Bundle.main.url(forResource: "audioBg", withExtension: "mp3")
+        // now use declared path 'url' to initialize the player
+    audio = AVPlayer.init(url: url!)
+        // after initialization play audio its just like click on play button
+    audio?.play()
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -187,22 +204,6 @@ class MenuViewController: UIViewController {
       self.navigationController?.pushViewController(gameViewController, animated: true)
     }
     
-  }
-
-  var audio:AVPlayer!
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    question.backgroundColor = .white
-    question.layer.cornerRadius = 8
-    question.layer.shadowRadius = 4
-      
-    question.layer.shadowOpacity = 0.3
-    question.layer.shadowOffset  = CGSize(width: 0, height: 2)
-    let url = Bundle.main.url(forResource: "audioBg", withExtension: "mp3")
-        // now use declared path 'url' to initialize the player
-    audio = AVPlayer.init(url: url!)
-        // after initialization play audio its just like click on play button
-    audio?.play()
   }
   
   @IBAction func playVideoAction(_ sender: Any) {

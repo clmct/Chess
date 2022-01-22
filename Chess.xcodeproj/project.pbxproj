@@ -9,48 +9,60 @@
 /* Begin PBXBuildFile section */
 		08F84BD73A0A387C2D33795E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D4CBF34113B51946050A7D /* Assets.xcassets */; };
 		17BF56DF8E9211E63485300B /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F2B7CBB51A6000F99DB99B /* PieceView.swift */; };
+		1B23D0EDB5FE9F225584DB2A /* VideoPlayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DC96F769796C0FB63FE55C /* VideoPlayerVC.xib */; };
 		1B8CEC26C3BFBAE2C7E2E8A4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD19FEC42D9108EA48F338 /* MenuViewController.swift */; };
-		210001D5215EFC4811F714C5 /* Pods_Chess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D74B8165C30F42042D7BE4 /* Pods_Chess.framework */; };
 		298B2EE47DAEF67095AEC3D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8E387E02EFB91DADE42EED /* LaunchScreen.storyboard */; };
+		382FFC766B5B2A24857CBB87 /* VideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09534A418F9E2CB728BEF48 /* VideoPlayerVC.swift */; };
 		4288766492F45E2E7724396E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CEA4A9F5D246E4B9313167B /* GoogleService-Info.plist */; };
 		5C2A6357BC7FCE06A3340E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AF98DE691A647C06818767 /* AppDelegate.swift */; };
 		742DD170664C9E28BCE30877 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B112B5DF7B51E843BEDC1E /* BoardView.swift */; };
+		7F3E0A0DA595A72BB92FB08A /* audioWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D13A8651C993C9AE0724910A /* audioWin.mp3 */; };
 		8EB2D66A43557688F80F3385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1375BA3DF5A456DB978FEC7 /* Main.storyboard */; };
 		9806FA7A9247B1ED159B7869 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136EDE77FA7CAE257433EB6 /* FirebaseService.swift */; };
+		9A70014D06249DDC3D8820E9 /* Pods_Chess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34273E9453C594ED2E7A0FD7 /* Pods_Chess.framework */; };
 		A080519567B62AF0B13B5E7F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2610DE4E399FE8E63A4FCC0C /* GameViewController.swift */; };
 		A80DAA5F91F5DD3F5A3219D2 /* PromotionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C66E166BB16439224638C /* PromotionSelectionViewController.swift */; };
 		AA238C50499704FA36F3E459 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9A7DFBA5AD31B8BCBC90CF /* BoardViewModel.swift */; };
+		B287090C279BDE3E00381D60 /* audioBg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B287090B279BDE3E00381D60 /* audioBg.mp3 */; };
+		B287090E279BEA8600381D60 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287090D279BEA8600381D60 /* Animation.swift */; };
 		BEDCC9767B57BA6919A3D091 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34F84007CD4F7A58409B8C /* GameViewModel.swift */; };
 		F975208E8ED534940C1A094F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885D6ADEF02551ACEDF61D8 /* SceneDelegate.swift */; };
+		FD6063248F275841EF861DAA /* PlayChess.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 20E0F21F08C2FCB35C92CC60 /* PlayChess.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0885D6ADEF02551ACEDF61D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		089EC0BAF6241DDA5E14C907 /* Pods-Chess.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chess.production.xcconfig"; path = "Target Support Files/Pods-Chess/Pods-Chess.production.xcconfig"; sourceTree = "<group>"; };
 		0FBD1594B75AE0B50864E384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18D74B8165C30F42042D7BE4 /* Pods_Chess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1398FE747AF243EA5633D21B /* Pods-Chess.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chess.develop.xcconfig"; path = "Target Support Files/Pods-Chess/Pods-Chess.develop.xcconfig"; sourceTree = "<group>"; };
+		20E0F21F08C2FCB35C92CC60 /* PlayChess.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayChess.mp4; sourceTree = "<group>"; };
 		2610DE4E399FE8E63A4FCC0C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		34273E9453C594ED2E7A0FD7 /* Pods_Chess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B112B5DF7B51E843BEDC1E /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		44DC96F769796C0FB63FE55C /* VideoPlayerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerVC.xib; sourceTree = "<group>"; };
 		47F48FF0362691C13ACEDE6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CEA4A9F5D246E4B9313167B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A50D03EA2009BD07FD10574 /* Chess.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B34F84007CD4F7A58409B8C /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		5F9A7DFBA5AD31B8BCBC90CF /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
-		737C9E18EBACB812487A6040 /* Pods-Chess.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chess.production.xcconfig"; path = "Target Support Files/Pods-Chess/Pods-Chess.production.xcconfig"; sourceTree = "<group>"; };
 		A4AF98DE691A647C06818767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4D4CBF34113B51946050A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEFD19FEC42D9108EA48F338 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B09534A418F9E2CB728BEF48 /* VideoPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerVC.swift; sourceTree = "<group>"; };
 		B136EDE77FA7CAE257433EB6 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		B287090B279BDE3E00381D60 /* audioBg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioBg.mp3; sourceTree = "<group>"; };
+		B287090D279BEA8600381D60 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		CD5C66E166BB16439224638C /* PromotionSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionSelectionViewController.swift; sourceTree = "<group>"; };
+		D13A8651C993C9AE0724910A /* audioWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioWin.mp3; sourceTree = "<group>"; };
 		E3F2B7CBB51A6000F99DB99B /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
-		FE006BA04A763337A7BB7D7B /* Pods-Chess.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chess.develop.xcconfig"; path = "Target Support Files/Pods-Chess/Pods-Chess.develop.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B54C2F4C50E76657FCBB5115 /* Frameworks */ = {
+		DC76FA52C103DA20DA20E87E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				210001D5215EFC4811F714C5 /* Pods_Chess.framework in Frameworks */,
+				9A70014D06249DDC3D8820E9 /* Pods_Chess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +77,7 @@
 				AE32617A6E0EDFE5F7DB23DA /* PromotionSelection */,
 				1EDA569DBFB1BBE96DAF4312 /* Views */,
 				B136EDE77FA7CAE257433EB6 /* FirebaseService.swift */,
+				B287090D279BEA8600381D60 /* Animation.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -87,6 +100,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		37191ED80399D35610E4A496 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34273E9453C594ED2E7A0FD7 /* Pods_Chess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		375661B553E280E522DA33CE /* Board */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,25 +126,30 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		55B3686C727E31809483D1D9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				18D74B8165C30F42042D7BE4 /* Pods_Chess.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5B40E94051B82CA4DCB95D2B /* Chess */ = {
 			isa = PBXGroup;
 			children = (
 				4F38BDAE2F7B79FF8C0BECE0 /* Application */,
 				0B282D44D67E8B589CD10EFA /* Modules */,
+				A53C8051879BB810316A738D /* VideoPlayer */,
 				EA8E387E02EFB91DADE42EED /* LaunchScreen.storyboard */,
 				B1375BA3DF5A456DB978FEC7 /* Main.storyboard */,
 				A4D4CBF34113B51946050A7D /* Assets.xcassets */,
+				B287090B279BDE3E00381D60 /* audioBg.mp3 */,
+				D13A8651C993C9AE0724910A /* audioWin.mp3 */,
 				4CEA4A9F5D246E4B9313167B /* GoogleService-Info.plist */,
+				20E0F21F08C2FCB35C92CC60 /* PlayChess.mp4 */,
 			);
 			path = Chess;
+			sourceTree = "<group>";
+		};
+		6110263C2A065316E4D14BBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1398FE747AF243EA5633D21B /* Pods-Chess.develop.xcconfig */,
+				089EC0BAF6241DDA5E14C907 /* Pods-Chess.production.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		719DE6F4EBA5FB53BA6C9821 /* Products */ = {
@@ -132,6 +158,15 @@
 				5A50D03EA2009BD07FD10574 /* Chess.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A53C8051879BB810316A738D /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				B09534A418F9E2CB728BEF48 /* VideoPlayerVC.swift */,
+				44DC96F769796C0FB63FE55C /* VideoPlayerVC.xib */,
+			);
+			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
 		AE32617A6E0EDFE5F7DB23DA /* PromotionSelection */ = {
@@ -147,23 +182,13 @@
 			children = (
 				5B40E94051B82CA4DCB95D2B /* Chess */,
 				719DE6F4EBA5FB53BA6C9821 /* Products */,
-				D7DCE235C5983635D0EA1C57 /* Pods */,
-				55B3686C727E31809483D1D9 /* Frameworks */,
+				6110263C2A065316E4D14BBF /* Pods */,
+				37191ED80399D35610E4A496 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
 			tabWidth = 2;
 			usesTabs = 0;
-		};
-		D7DCE235C5983635D0EA1C57 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FE006BA04A763337A7BB7D7B /* Pods-Chess.develop.xcconfig */,
-				737C9E18EBACB812487A6040 /* Pods-Chess.production.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
 		};
 		FCEB7F79DAE7CF29059A9ADC /* Menu */ = {
 			isa = PBXGroup;
@@ -180,11 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C6663BE10B094539B135C89 /* Build configuration list for PBXNativeTarget "Chess" */;
 			buildPhases = (
-				64C78BC0FC2544EBDF904C7A /* [CP] Check Pods Manifest.lock */,
+				71E20654E16244FCFAABC2B7 /* [CP] Check Pods Manifest.lock */,
 				1A7F58DA643D00A385059854 /* Sources */,
 				A7CC017CA2BB8869A99FE74D /* Resources */,
-				B54C2F4C50E76657FCBB5115 /* Frameworks */,
-				9B9332AAAB40CF654C36B65C /* [CP] Embed Pods Frameworks */,
+				DC76FA52C103DA20DA20E87E /* Frameworks */,
+				0A750BF79790D2B3C2A69F01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,14 +259,35 @@
 				08F84BD73A0A387C2D33795E /* Assets.xcassets in Resources */,
 				4288766492F45E2E7724396E /* GoogleService-Info.plist in Resources */,
 				298B2EE47DAEF67095AEC3D7 /* LaunchScreen.storyboard in Resources */,
+				B287090C279BDE3E00381D60 /* audioBg.mp3 in Resources */,
 				8EB2D66A43557688F80F3385 /* Main.storyboard in Resources */,
+				FD6063248F275841EF861DAA /* PlayChess.mp4 in Resources */,
+				1B23D0EDB5FE9F225584DB2A /* VideoPlayerVC.xib in Resources */,
+				7F3E0A0DA595A72BB92FB08A /* audioWin.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		64C78BC0FC2544EBDF904C7A /* [CP] Check Pods Manifest.lock */ = {
+		0A750BF79790D2B3C2A69F01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71E20654E16244FCFAABC2B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,23 +309,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9B9332AAAB40CF654C36B65C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chess/Pods-Chess-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -297,6 +326,8 @@
 				17BF56DF8E9211E63485300B /* PieceView.swift in Sources */,
 				A80DAA5F91F5DD3F5A3219D2 /* PromotionSelectionViewController.swift in Sources */,
 				F975208E8ED534940C1A094F /* SceneDelegate.swift in Sources */,
+				B287090E279BEA8600381D60 /* Animation.swift in Sources */,
+				382FFC766B5B2A24857CBB87 /* VideoPlayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +355,7 @@
 /* Begin XCBuildConfiguration section */
 		544D1780E69B480C3C906AC5 /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 737C9E18EBACB812487A6040 /* Pods-Chess.production.xcconfig */;
+			baseConfigurationReference = 089EC0BAF6241DDA5E14C907 /* Pods-Chess.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -465,7 +496,7 @@
 		};
 		CDEFC7BF3F8D265A862F9657 /* Develop */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE006BA04A763337A7BB7D7B /* Pods-Chess.develop.xcconfig */;
+			baseConfigurationReference = 1398FE747AF243EA5633D21B /* Pods-Chess.develop.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
