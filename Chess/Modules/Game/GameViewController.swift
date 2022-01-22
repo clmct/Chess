@@ -7,9 +7,10 @@ import UIKit
 import SnapKit
 import SwiftChess
 import SwiftConfettiView
+import AVFoundation
 
 class GameViewController: UIViewController {
-  
+  var audio: AVPlayer!
   var confettiView: SwiftConfettiView!
   private let viewModel: GameViewModel
   
@@ -48,6 +49,8 @@ class GameViewController: UIViewController {
     viewModel.delegate = self
     
     viewModel.addPieceViews()
+    
+   
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -248,7 +251,11 @@ extension GameViewController: GameViewModelDelegate {
   }
   
   func gameWonByPlayer(game: Game, player: Player) {
-    
+    let url = Bundle.main.url(forResource: "audioWin", withExtension: "mp3")
+        // now use declared path 'url' to initialize the player
+    audio = AVPlayer.init(url: url!)
+        // after initialization play audio its just like click on play button
+    audio?.play()
     let colorName = player.color.string
     
     let title = "Checkmate!"
