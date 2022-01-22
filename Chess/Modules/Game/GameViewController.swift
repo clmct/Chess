@@ -14,6 +14,8 @@ class GameViewController: UIViewController {
   var confettiView: SwiftConfettiView!
   private let viewModel: GameViewModel
   
+  private let closeButton = UIImageView()
+  
   private lazy var boardView = BoardView(viewModel: viewModel.boardViewModel)
   
   var pieceViews = [PieceView]()
@@ -49,13 +51,28 @@ class GameViewController: UIViewController {
     viewModel.delegate = self
     
     viewModel.addPieceViews()
-//    viewModel.game.currentPlayer.game.
-   
+
+    
+    view.addSubview(closeButton)
+    closeButton.snp.makeConstraints { make in
+      make.leading.top.equalToSuperview().offset(40)
+      make.size.equalTo(50)
+    }
+    
+    closeButton.image = UIImage(named: "BlackQueen1")
+    let tap = UITapGestureRecognizer(target: self, action: #selector(close))
+    closeButton.addGestureRecognizer(tap)
+    closeButton.isUserInteractionEnabled = true
   }
   
+  @objc
+  func close() {
+    navigationController?.popViewController(animated: true)
+  }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+    navigationController?.setNavigationBarHidden(true, animated: false)
     if !self.hasMadeInitialAppearance {
       if let player = viewModel.game.currentPlayer as? AIPlayer {
         player.makeMoveAsync()
