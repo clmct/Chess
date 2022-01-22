@@ -8,7 +8,7 @@ import SwiftChess
 
 class MenuViewController: UIViewController {
   
-
+  @IBOutlet weak var score: UILabel!
   @IBOutlet weak var Easy: UIButton!
   @IBOutlet weak var Normal: UIButton!
   @IBOutlet weak var Russia: UIButton!
@@ -19,17 +19,35 @@ class MenuViewController: UIViewController {
   @IBOutlet weak var RandomKing: UIButton!
   @IBOutlet weak var WhiteKing: UIButton!
   @IBOutlet weak var BlackKing: UIButton!
+  
+  var colorToStart: String = "white"
+  var vesusStart: String = "AI"
+  var levelStart: String = "Normal"
+  
   class func initWithSB() -> MenuViewController {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let className = "MenuViewController"
     let viewController: MenuViewController =
     storyboard.instantiateViewController(withIdentifier: className) as! MenuViewController
     return viewController
-    
   }
-  var colorToStart: String = "white"
-  var vesusStart: String = "AI"
-  var levelStart: String = "Normal"
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    updateScore()
+  }
+  
+  func updateScore() {
+    FirebaseService.shared.getScore { score in
+      DispatchQueue.main.async {
+        self.score.text = "Score: \(score ?? 0)"
+      }
+    }
+  }
   
   @IBAction func StartByBlack(_ sender: Any) {
     GetButtonpressed(buttonPressed: BlackKing)
