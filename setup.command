@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# меняем версию ruby
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-rvm use 3.0
-
 # найдем директорию, в которой лежит файл исполняемого срипта
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
