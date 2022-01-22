@@ -270,7 +270,6 @@
                         <outlet property="RandomKing" destination="y5L-n7-nqw" id="yeU-bZ-BJF"/>
                         <outlet property="Russia" destination="DX4-6B-wcX" id="XmZ-lL-BvE"/>
                         <outlet property="WhiteKing" destination="UWG-Ln-fR1" id="r6y-2K-giA"/>
-                        <outlet property="play" destination="iO0-G6-gxi" id="ZIf-ku-vUN"/>
                         <outlet property="question" destination="vQ1-dz-5rL" id="ve1-EF-YSo"/>
                         <outlet property="score" destination="qtd-om-cA3" id="KZs-5y-A35"/>
                     </connections>
